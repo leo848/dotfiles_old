@@ -1,0 +1,21 @@
+Alias newtab tabnew
+Alias nt tabnew 
+Alias editconfig tabnew\ ~/.vimrc
+
+Alias b !sh\ ./build.sh
+Alias g Git
+
+augroup npm
+	autocmd BufNewFile,BufRead *.vue Alias -buffer f !npm\ run\ lint
+	autocmd BufNewFile,BufRead *.vue Alias -buffer li !npm\ run\ lint
+augroup END
+
+augroup python
+	autocmd BufNewFile,BufRead *.py Alias -buffer f !black\ --fast\ %
+	autocmd BufNewFile,BufRead *.py Alias -buffer li !black\ --fast\ %
+augroup END
+
+augroup js
+	autocmd BufNewFile,BufRead *.js Alias -buffer f !prettier\ --write\ %
+	autocmd BufNewFile,BufRead *.js Alias -buffer li !prettier\ --write\ %
+augroup END

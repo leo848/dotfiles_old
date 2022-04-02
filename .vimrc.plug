@@ -1,0 +1,22 @@
+call plug#begin('~/.config/nvim')
+
+Plug 'Konfekt/vim-alias'                            " Alias for commands 
+
+Plug 'AndrewRadev/splitjoin.vim'                    " Split and join lines 
+
+Plug 'preservim/nerdtree'                           " File explorer 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder
+
+Plug 'itchyny/lightline.vim'                        " status bar
+Plug 'morhetz/gruvbox'                              " colorscheme
+
+Plug 'terryma/vim-smooth-scroll'                    " smooth scrolling 
+Plug 'unblevable/quick-scope'                       " letter highlighting for 'f' and 't' 
+
+Plug 'tpope/vim-surround'                           " insert, change, delete surrounds 
+Plug 'tpope/vim-fugitive'                           " git client 
+Plug 'tpope/vim-obsession'                          " sessions
+Plug 'tpope/vim-commentary'                         " comments
+Plug 'tpope/vim-repeat'                             " repeat plugin actions with '.'
+
+call plug#end()
