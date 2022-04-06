@@ -19,4 +19,6 @@ Plug 'tpope/vim-obsession'                          " sessions
 Plug 'tpope/vim-commentary'                         " comments
 Plug 'tpope/vim-repeat'                             " repeat plugin actions with '.'
 
+Plug 'vim-scripts/loremipsum'                       " Generate dummy text  
+
 call plug#end()
