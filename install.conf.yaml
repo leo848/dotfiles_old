@@ -1,13 +1,14 @@
 - link:
+    ~/.bash/:
+        create: true
+        force: true
     ~/.bashrc:
         force: true
-    ~/.bash:
-        create: true
-        force: true
-    ~/.config/nvim/plugins:
-        create: true
     ~/.config/nvim/init.vim: 
         relink: true
+    ~/.config/nvim/plugins/:
+        path: plugins
+        create: true
     ~/.config/qutebrowser/config.py:
         create: true
         path: qutebrowser/config.py
