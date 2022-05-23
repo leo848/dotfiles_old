@@ -1,5 +1,5 @@
 - link:
-    ~/.vimrc: 
+    ~/.config/nvim/init.vim: 
         relink: true
     ~/.local/share/nvim/site/plugins/:
         create: true
