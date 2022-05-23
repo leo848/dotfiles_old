@@ -1,6 +1,7 @@
 - link:
     ~/.bash/:
         path: bash/*
+        glob: true
         create: true
     ~/.bashrc:
         force: true
