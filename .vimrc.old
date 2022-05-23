@@ -1,0 +1,36 @@
+nnoremap <Space> <Nop>
+let mapleader=" "
+
+inoremap <Space> <Nop>
+
+autocmd VimResized * :wincmd = 
+
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+
+
+
+
+" noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 10, 4)<cr>
+
+
+autocmd VimEnter * :source ~/.vimrc.default_aliases
+autocmd VimEnter * :source ~/.vimrc.aliases
+
+autocmd filetype python Alias! f !black\ --fast\ %
+
+autocmd BufWritePre *.html :normal gg=G
+
+
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+

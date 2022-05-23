@@ -1,0 +1,12 @@
+- link:
+    ~/.vimrc: 
+        relink: true
+    ~/.local/share/nvim/site/plugins/:
+        create: true
+        force: true
+    ~/.bashrc:
+        force: true
+    ~/.config/qutebrowser/config.py:
+        create: true
+        path: qutebrowser/config.py
+

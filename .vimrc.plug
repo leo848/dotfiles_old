@@ -1,24 +1,47 @@
 call plug#begin('~/.config/nvim')
 
-Plug 'Konfekt/vim-alias'                            " Alias for commands 
+" Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-runner'
 
-Plug 'AndrewRadev/splitjoin.vim'                    " Split and join lines 
+" Plug 'Konfekt/vim-alias'                            " Alias for commands
 
-Plug 'preservim/nerdtree'                           " File explorer 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Code of Completion
 
-Plug 'itchyny/lightline.vim'                        " status bar
-Plug 'morhetz/gruvbox'                              " colorscheme
+" Plug 'AndrewRadev/splitjoin.vim'                    " Split and join lines
+" Plug 'Townk/vim-autoclose'                          " auto-close brackets and string delimiters
+" Plug 'alvan/vim-closetag'
 
-Plug 'terryma/vim-smooth-scroll'                    " smooth scrolling 
-Plug 'unblevable/quick-scope'                       " letter highlighting for 'f' and 't' 
+" Plug 'preservim/nerdtree'                           " File explorer
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder
+" Plug 'dyng/ctrlsf.vim'                              " Find in project
 
-Plug 'tpope/vim-surround'                           " insert, change, delete surrounds 
-Plug 'tpope/vim-fugitive'                           " git client 
-Plug 'tpope/vim-obsession'                          " sessions
-Plug 'tpope/vim-commentary'                         " comments
-Plug 'tpope/vim-repeat'                             " repeat plugin actions with '.'
+" Plug 'itchyny/lightline.vim'                        " status bar
+" Plug 'morhetz/gruvbox'                              " colorscheme
+" Plug 'mhinz/vim-startify'                           " fancy start screen
 
-Plug 'vim-scripts/loremipsum'                       " Generate dummy text  
+" Plug 'tpope/vim-surround'                           " insert, change, delete surrounds
+" Plug 'tpope/vim-fugitive'                           " git client
+" Plug 'tpope/vim-obsession'                          " sessions
+" Plug 'tpope/vim-commentary'                         " comments
+" Plug 'tpope/vim-repeat'                             " repeat plugin actions with '.'
+
+" Plug 'junegunn/vim-easy-align'                      " align stuff
+" Plug 'junegunn/vim-peekaboo'                        " preview registers
+
+" Plug 'michaeljsmith/vim-indent-object'              " noun based on indentation
+" Plug 'kana/vim-textobj-user'                        " base plugin for following two
+" Plug 'kana/vim-textobj-entire'                      " an entire thing
+" Plug 'kana/vim-textobj-line'                        " line
+
+" Plug 'vim-scripts/loremipsum'                       " Generate dummy text
+
+" Plug 'terryma/vim-smooth-scroll'                    " smooth scrolling
+" Plug 'farmergreg/vim-lastplace'                     " remember last edit position
+" Plug 'unblevable/quick-scope'                       " letter highlighting for 'f' and 't'
+
+" Plug 'sheerun/vim-polyglot'                         " language plugin
+" Plug 'kristijanhusak/vim-carbon-now-sh'             " open text in carbon
+
+" Plug 'vimsence/vimsence'                            " Discord status plugin
 
 call plug#end()
