@@ -6,6 +6,9 @@
         force: true
     ~/.bashrc:
         force: true
+    ~/.bash:
+        create: true
+        force: true
     ~/.config/qutebrowser/config.py:
         create: true
         path: qutebrowser/config.py
