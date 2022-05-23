@@ -1,5 +1,6 @@
 - link:
     ~/.bash/:
+        path: bash
         create: true
         force: true
     ~/.bashrc:
@@ -9,7 +10,8 @@
     ~/.config/nvim/plugins/:
         path: plugins
         create: true
+        force: true
     ~/.config/qutebrowser/config.py:
-        create: true
         path: qutebrowser/config.py
+        create: true
 
