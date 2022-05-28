@@ -100,6 +100,7 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/gruvbox.vim
 source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/loremimpsum.vim
+source ~/.config/nvim/plugins/markdown-preview.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/obsession.vim
 source ~/.config/nvim/plugins/peekaboo.vim

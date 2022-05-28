@@ -35,5 +35,5 @@ endfunction
 
 augroup run_aliases
     autocmd!
-    autocmd User PlugLoaded ++nested :call RunAliases()
+    autocmd VimEnter * :call RunAliases()
 augroup END
