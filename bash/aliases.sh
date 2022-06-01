@@ -12,3 +12,6 @@ alias speedtest="~/apps/speedtest/speedtest"
 alias wifi="sudo service NetworkManager restart"
 
 alias please=sudo fucking=sudo
+
+
+alias cat="bat"
