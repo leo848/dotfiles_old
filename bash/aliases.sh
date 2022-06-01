@@ -14,4 +14,4 @@ alias wifi="sudo service NetworkManager restart"
 alias please=sudo fucking=sudo
 
 
-alias cat="bat"
+alias cat="bat" 
