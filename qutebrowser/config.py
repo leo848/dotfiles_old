@@ -40,6 +40,9 @@ def keybinds():
     config.bind("Dh", "download-remove")  # hide
     config.bind("Dr", "download-retry")  # retry
 
+    config.bind("wi", "devtools")
+    config.bind("wf", "devtools-focus")
+
     config.bind("tpk", "set tabs.position top")
     config.bind("tpj", "set tabs.position bottom")
     config.bind("tph", "set tabs.position left")
@@ -52,7 +55,7 @@ keybinds()
 
 # use tor
 c.content.proxy = 'socks://localhost:9050/'
-c.url.searchengines['DEFAULT'] = 'https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/?q={}'
+c.url.searchengines['DEFAULT'] = 'http://127.0.0.1:8888/?q={}'
 
 c.auto_save.session = True
 
@@ -74,7 +77,7 @@ c.content.javascript.clipboard = "access"
 c.content.mouse_lock = True
 c.content.headers.accept_language = "en-US;en;de-DE;de;q=0.9"
 
-c.downloads.remove_finished = 250
+c.downloads.remove_finished = 250_000
 
 c.scrolling.smooth = True
 
@@ -86,6 +89,10 @@ c.tabs.indicator.padding["top"] = 2
 c.statusbar.padding["bottom"] = 2
 c.statusbar.padding["top"] = 2
 
+SEARX = "127.0.0.1:8888/"
+c.url.default_page = SEARX
+c.url.start_pages = SEARX
+
 c.window.hide_decoration = True
 
 c.aliases = {
@@ -93,3 +100,7 @@ c.aliases = {
     "wikirace": "spawn --userscript wikirace-init",
     "wikirace-exit": "spawn --userscript wikirace-exit",
 }
+
+
+with config.pattern(SEARX) as p:
+    p.hints.selectors['all'].append('label[for^=checkbox]')
