@@ -50,6 +50,8 @@ def keybinds():
 
     config.bind("ö", "set-cmd-text -s :quickmark-load")
 
+    config.bind("<Space>t", "config-cycle --print content.proxy 'socks://localhost:9050' 'system'")
+
 
 keybinds()
 
