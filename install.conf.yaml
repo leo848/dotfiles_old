@@ -17,4 +17,6 @@
     ~/.config/qutebrowser/config.py:
         path: qutebrowser/config.py
         create: true
+    ~/.config/alacritty/alacritty.yml:
+        create: true
 

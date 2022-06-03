@@ -99,7 +99,6 @@ source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/gruvbox.vim
 source ~/.config/nvim/plugins/git-messenger.vim
-source ~/.config/nvim/plugins/hardtime.vim
 source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/loremimpsum.vim
 source ~/.config/nvim/plugins/markdown-preview.vim

@@ -109,6 +109,8 @@ if type rg &> /dev/null; then
 	export FZF_DEFAULT_COMMAND='rg --files --hidden'
 fi
 
+alias h=help
+
 quote () {
 	case "$(shuf -i1-15 -n1)" in
      0) pfortune | cowsay -b | lolcat;;
