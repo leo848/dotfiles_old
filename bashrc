@@ -111,17 +111,21 @@ fi
 
 alias h=help
 
+_q_gay () {
+    gay -i 2d
+}
+
 quote () {
 	case "$(shuf -i1-15 -n1)" in
-     0) pfortune | cowsay -b | lolcat;;
-     1) pfortune | cowsay -d | lolcat;;
-     2) pfortune | cowsay -g | lolcat;;
-     3) pfortune | cowsay -p | lolcat;;
-     4) pfortune | cowsay -s | lolcat;;
-     5) pfortune | cowsay -t | lolcat;;
-     6) pfortune | cowsay -w | lolcat;;
-     7) pfortune | cowsay -y | lolcat;;
-     *) pfortune | cowsay | lolcat;;
+     0) pfortune | cowsay -b | _q_gay;;
+     1) pfortune | cowsay -d | _q_gay;;
+     2) pfortune | cowsay -g | _q_gay;;
+     3) pfortune | cowsay -p | _q_gay;;
+     4) pfortune | cowsay -s | _q_gay;;
+     5) pfortune | cowsay -t | _q_gay;;
+     6) pfortune | cowsay -w | _q_gay;;
+     7) pfortune | cowsay -y | _q_gay;;
+     *) pfortune | cowsay | _q_gay;;
 	esac
 }
 
