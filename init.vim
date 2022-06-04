@@ -34,6 +34,7 @@ set scrolloff=8
 set nojoinspaces
 set shiftwidth=3
 set showtabline=2
+set termguicolors
 set wildignorecase
 set signcolumn=yes
 set sidescrolloff=8
@@ -45,6 +46,7 @@ set shiftwidth=4 tabstop=4
 set wildignore=*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img
 
 let g:python3_host_prog = '/usr/bin/python3.9'
+
 
 " ----------------------------------------------------
 "  Keybindings
