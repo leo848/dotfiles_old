@@ -81,6 +81,8 @@ c.content.headers.accept_language = "en-US;en;de-DE;de;q=0.9"
 
 c.downloads.remove_finished = 250_000
 
+c.fonts.default_family = "JetBrainsMono NF"
+
 c.scrolling.smooth = True
 
 c.tabs.last_close = "startpage"

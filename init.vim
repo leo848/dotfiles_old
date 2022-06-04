@@ -118,7 +118,7 @@ source ~/.config/nvim/plugins/statusbar.vim
 source ~/.config/nvim/plugins/surround.vim
 source ~/.config/nvim/plugins/text-objects.vim
 source ~/.config/nvim/plugins/tmux-navigator.vim
-source ~/.config/nvim/plugins/vimsense.vim
+source ~/.config/nvim/plugins/vimsence.vim
 source ~/.config/nvim/plugins/which-key.vim
 
 call plug#end()
