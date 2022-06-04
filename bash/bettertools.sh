@@ -2,4 +2,4 @@
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # help
-alias bathelp="bat --plain --language=help"
+alias bathelp="bat --plain --language=help --pager=always"
