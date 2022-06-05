@@ -83,8 +83,11 @@ c.downloads.remove_finished = 250_000
 
 c.fonts.default_family = "JetBrainsMono NF"
 c.fonts.default_size = "12pt"
+c.fonts.prompts = "10pt default_family"
 c.fonts.tabs.unselected = "10pt default_family"
 c.fonts.tabs.selected = "10pt default_family"
+
+c.hints.chars = "asdefghjkl"
 
 c.scrolling.smooth = True
 
