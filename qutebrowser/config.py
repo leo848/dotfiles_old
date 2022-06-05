@@ -82,6 +82,9 @@ c.content.headers.accept_language = "en-US;en;de-DE;de;q=0.9"
 c.downloads.remove_finished = 250_000
 
 c.fonts.default_family = "JetBrainsMono NF"
+c.fonts.default_size = "12pt"
+c.fonts.tabs.unselected = "10pt default_family"
+c.fonts.tabs.selected = "10pt default_family"
 
 c.scrolling.smooth = True
 
