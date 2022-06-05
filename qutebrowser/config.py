@@ -70,6 +70,7 @@ c.colors.tabs.odd.bg = "#222"
 c.colors.tabs.selected.even.bg = "#a20"
 c.colors.tabs.selected.odd.bg = "#b31"
 
+c.colors.hints.bg = "qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))"
 c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.darkmode.policy.images = "never" # ddg looks bad else
 c.colors.webpage.preferred_color_scheme = "dark"
@@ -95,6 +96,7 @@ c.tabs.last_close = "startpage"
 c.tabs.favicons.scale = 1.1
 c.tabs.indicator.padding["bottom"] = 2
 c.tabs.indicator.padding["top"] = 2
+c.tabs.select_on_remove = "last-used"
 
 c.statusbar.padding["bottom"] = 2
 c.statusbar.padding["top"] = 2
