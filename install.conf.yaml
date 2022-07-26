@@ -19,4 +19,6 @@
         create: true
     ~/.config/alacritty/alacritty.yml:
         create: true
+    ~/.config/starship.toml:
+        create: true
 
