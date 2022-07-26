@@ -51,6 +51,7 @@ def keybinds():
     config.bind("ö", "set-cmd-text -s :quickmark-load")
 
     config.bind("<Space>t", "config-cycle --print content.proxy 'socks://localhost:9050' 'system'")
+    config.bind("<Space>bg", "config-cycle --print colors.webpage.bg 'black' 'white'")
 
 
 keybinds()
@@ -58,6 +59,7 @@ keybinds()
 # use tor
 c.content.proxy = 'socks://localhost:9050/'
 c.url.searchengines['DEFAULT'] = 'http://127.0.0.1:8888/?q={}'
+c.url.searchengines['d'] = 'https://duck.com/?q={}'
 
 c.auto_save.session = True
 
@@ -71,9 +73,15 @@ c.colors.tabs.selected.even.bg = "#a20"
 c.colors.tabs.selected.odd.bg = "#b31"
 
 c.colors.hints.bg = "qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))"
+c.colors.hints.match.fg = "#ff0"
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.policy.images = "never" # ddg looks bad else
+c.colors.webpage.darkmode.policy.images = "never"
+c.colors.webpage.bg = "black"
+
 c.colors.webpage.preferred_color_scheme = "dark"
+
+c.completion.favorite_paths = ["/home/leo/", "/home/leo/Documents/", "/home/leo/Schule/"]
+c.completion.use_best_match = True
 
 c.content.pdfjs = True
 c.content.javascript.clipboard = "access"
@@ -116,3 +124,4 @@ c.aliases = {
 
 with config.pattern(SEARX) as p:
     p.hints.selectors['all'].append('label[for^=checkbox]')
+

@@ -139,8 +139,12 @@ clear
 EDITOR='vim'
 set -o vi
 
+alias web="sudo bash /home/leo/.local/bin/run-searx > /dev/null 2>&1 &"
+
 
 for file in ~/.bash/**; do
     source $file
 done
 . "$HOME/.cargo/env"
+
+eval "$(starship init bash)"

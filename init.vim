@@ -74,6 +74,8 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
 
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 inoremap jk <Esc>
 
 " ----------------------------------------------------
@@ -93,6 +95,7 @@ source ~/.config/nvim/plugins/alias.vim
 source ~/.config/nvim/plugins/autoclose.vim
 source ~/.config/nvim/plugins/carbon-now.vim
 source ~/.config/nvim/plugins/commentary.vim
+source ~/.config/nvim/plugins/copilot.vim
 source ~/.config/nvim/plugins/ctrlsf.vim
 source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/easy-align.vim
@@ -100,8 +103,8 @@ source ~/.config/nvim/plugins/editorconfig.vim
 source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/gruvbox.vim
+source ~/.config/nvim/plugins/gist.vim
 source ~/.config/nvim/plugins/git-messenger.vim
-source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/loremimpsum.vim
 source ~/.config/nvim/plugins/markdown-preview.vim
 source ~/.config/nvim/plugins/movelines.vim

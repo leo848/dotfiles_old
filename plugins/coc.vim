@@ -25,14 +25,14 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 " Navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> <leader>cgN <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>cgn <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>cN <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>cn <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> <leader>cgd <Plug>(coc-definition)
-nmap <silent> <leader>cgy <Plug>(coc-type-definition)
-nmap <silent> <leader>cgi <Plug>(coc-implementation)
-nmap <silent> <leader>cgr <Plug>(coc-references)
+nmap <silent> <leader>cd <Plug>(coc-definition)
+nmap <silent> <leader>cy <Plug>(coc-type-definition)
+nmap <silent> <leader>ci <Plug>(coc-implementation)
+nmap <silent> <leader>cR <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> <leader>ck :call ShowDocumentation()<CR>
@@ -41,7 +41,7 @@ function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
-    call feedkeys('K', 'in')
+    call feedkeys('ck', 'in')
   endif
 endfunction
 
@@ -52,8 +52,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>cr <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>cf  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -63,17 +62,25 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ca  <Plug>(coc-codeaction)
+imap <m-a>       <Esc><Plug>(coc-fix-current)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>cf  <Plug>(coc-fix-current)
 
 " Run the Code Lens action on the current line.
 nmap <leader>cl  <Plug>(coc-codelens-action)
 
-"
+" All coc commands:
+
+" cn -> next diagnostic
+" cN -> previous diagnostic
+" cr -> rename symbol
+" cd -> definition
+" cr -> references
+" cy -> type definition
+" ci -> implementation
+" ck -> show documentation
+" cf -> fix current bug (maybe)
+" ca -> apply code action
+" cl -> apply code lens action
