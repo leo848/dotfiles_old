@@ -14,6 +14,6 @@ pipestatus = true
 map_symbol = true
 
 [sudo]
-enabled = true
+disabled = false
 
 
