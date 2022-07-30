@@ -5,9 +5,6 @@ add_newline = true
 [cmd_duration]
 min_time = 900
 
-[directory]
-home_symbol = "🏠"
-
 [status]
 disabled = false
 pipestatus = true
@@ -16,4 +13,6 @@ map_symbol = true
 [sudo]
 disabled = false
 
-
+[memory_usage]
+disabled = false
+threshold = 80
